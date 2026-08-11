@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Afzal | Platform Engineer & Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <!-- Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <!-- Right Side Floating Navigation -->
+    <div class="side-nav">
+        <a href="#about" class="side-dot" data-name="About" id="dot-about"></a>
+        <a href="#skills" class="side-dot" data-name="Skills" id="dot-skills"></a>
+        <a href="#experience" class="side-dot" data-name="Experience" id="dot-experience"></a>
+        <a href="#projects" class="side-dot" data-name="Projects" id="dot-projects"></a>
+        <a href="#certifications" class="side-dot" data-name="Certs" id="dot-certifications"></a>
+        <a href="#documents" class="side-dot" data-name="Documents" id="dot-documents"></a>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">shaik.afzal()</div>
+        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+        <ul id="nav-menu">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#documents" class="nav-link">Documents</a></li>
+            <li><a href="mailto:shaikafzalbasha52@gmail.com" class="btn-sm primary" style="color: var(--text-white);">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="about">
+        <div class="hero-text">
+            <h2> Hello, I am</h2>
+            <h1>Shaik Afzal</h1>
+            <p class="subtitle">Cloud, DevOps & Network Engineer | ServiceNow & Platform Developer</p>
+            <p>ServiceNow Certified System Administrator (CSA) and Certified Application Developer (CAD) with hands-on expertise in ITSM workflow automation, Flow Designer, GlideRecord scripting, and REST API integrations. Immediate joiner seeking Platform Development, DevOps, and Cloud Infrastructure roles.</p>
+            <div class="btn-group">
+                <a href="mailto:shaikafzalbasha52@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Hire Me</a>
+                <a href="#projects" class="btn btn-outline"><i class="fas fa-rocket"></i> View Projects</a>
+            </div>
+        </div>
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <!-- Terminal content injected by JS -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <!-- Skills Filter Bar -->
+        <div class="filter-bar reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="cloud-devops">Cloud & DevOps</button>
+            <button class="filter-btn" data-filter="servicenow-platform">ServiceNow & Platform</button>
+            <button class="filter-btn" data-filter="languages-db">Languages & DB</button>
+        </div>
+
+        <div class="section-title reveal">
+            <h3>Technical Skills</h3>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card card-hover reveal languages-db" style="animation-delay: 0.1s;">
+                <h4><i class="fas fa-code"></i> Languages</h4>
+                <div class="tags">
+                    <span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">Java</span><span class="tag">SQL</span><span class="tag">HTML5</span><span class="tag">CSS3</span>
+                </div>
+            </div>
+            <div class="skill-card card-hover reveal servicenow-platform" style="animation-delay: 0.2s;">
+                <h4><i class="fas fa-server"></i> Platforms & ITSM</h4>
+                <div class="tags">
+                    <span class="tag">ServiceNow (ITSM)</span><span class="tag">Flow Designer</span><span class="tag">GlideRecord API</span><span class="tag">Business Rules</span><span class="tag">Update Sets</span><span class="tag">Salesforce</span><span class="tag">Agentforce</span>
+                </div>
+            </div>
+            <div class="skill-card card-hover reveal languages-db" style="animation-delay: 0.3s;">
+                <h4><i class="fab fa-react"></i> Web & Frameworks</h4>
+                <div class="tags">
+                    <span class="tag">Django</span><span class="tag">React</span><span class="tag">Bootstrap</span><span class="tag">REST APIs</span><span class="tag">Git/GitHub</span>
+                </div>
+            </div>
+            <div class="skill-card card-hover reveal cloud-devops" style="animation-delay: 0.4s;">
+                <h4><i class="fas fa-cloud"></i> Cloud & Infrastructure</h4>
+                <div class="tags">
+                    <span class="tag">Azure Portal</span><span class="tag">Linux CLI</span><span class="tag">Git/GitHub</span><span class="tag">CI/CD Pipelines</span><span class="tag">Bash Scripting</span><span class="tag">Virtualization</span>
+                </div>
+            </div>
+            <div class="skill-card card-hover reveal languages-db" style="animation-delay: 0.5s;">
+                <h4><i class="fas fa-database"></i> Data & Databases</h4>
+                <div class="tags">
+                    <span class="tag">MySQL</span><span class="tag">SQLite</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span>
+                </div>
+            </div>
+            <div class="skill-card card-hover reveal cloud-devops" style="animation-delay: 0.6s;">
+                <h4><i class="fas fa-network-wired"></i> Networking & Methodologies</h4>
+                <div class="tags">
+                    <span class="tag">Cisco Networking</span><span class="tag">TCP/IP</span><span class="tag">Routing & Switching</span><span class="tag">Agile</span><span class="tag">SDLC</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Internships -->
+    <section id="experience" style="background: var(--bg-darker);">
+        <div class="section-title reveal">
+            <h3>Internships & Experience</h3>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="card card-hover">
+                    <h4>ServiceNow University Program — Intern</h4>
+                    <span class="meta">Platform Development & ITSM Automation | Remote | 2024 – 2025</span>
+                    <ul>
+                        <li>Built and configured ITSM workflows using Flow Designer, reducing manual ticket routing effort by an estimated 40%.</li>
+                        <li>Developed server-side Business Rules and GlideRecord scripts to automate incident categorization and SLA escalation.</li>
+                        <li>Implemented REST API integrations to synchronize external data sources with ServiceNow tables.</li>
+                        <li>Managed Update Sets and followed Agile/SDLC practices across development, test, and production instances.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="card card-hover">
+                    <h4>Web Development Internship</h4>
+                    <span class="meta">Full-Stack Developer (Django) | Remote | 2024</span>
+                    <ul>
+                        <li>Developed an Online Learning Platform in Django with user authentication, course enrollment, and content delivery modules.</li>
+                        <li>Designed relational schemas in SQLite/MySQL and implemented Django ORM queries for course and enrollment management.</li>
+                        <li>Built responsive front-end templates with HTML5, CSS3, Bootstrap, and JavaScript for cross-device accessibility.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="section-title reveal">
+            <h3>Projects</h3>
+        </div>
+        <div class="projects-grid">
+            
+            <div class="project-card card-hover reveal" style="animation-delay: 0.1s;">
+                <h4>ServiceNow Network Operations Portal</h4>
+                <span class="tech-stack">ServiceNow, JavaScript, Flow Designer, Business Rules, GlideRecord API</span>
+                <p class="project-desc">Engineered a centralized network operations portal for logging, triaging, and escalating infrastructure incidents. Automated multi-tier approval and notification workflows, cutting mean response time on critical incidents. Created custom tables, dashboards, and reports giving operations teams real-time visibility into network health.</p>
+                <div class="project-actions">
+                    <a href="#" class="btn-sm primary">View Live Demo / Architecture <i class="fas fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://github.com/shaikafzalbasha2030" target="_blank" class="btn-sm secondary"><i class="fab fa-github"></i> GitHub Code</a>
+                </div>
+            </div>
+
+            <div class="project-card card-hover reveal" style="animation-delay: 0.2s;">
+                <h4>Salesforce AI-Powered Customer Support Agent</h4>
+                <span class="tech-stack">Salesforce, Agentforce, Prompt Engineering, Flows</span>
+                <p class="project-desc">Autonomous customer-support Agentforce agent that resolves Tier-1 queries end-to-end, cutting simulated first-response time by 60%+ while preserving seamless human handoff.</p>
+                <div class="project-actions">
+                    <a href="#" class="btn-sm primary">View Live Demo / Architecture <i class="fas fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://github.com/shaikafzalbasha2030" target="_blank" class="btn-sm secondary"><i class="fab fa-github"></i> GitHub Code</a>
+                </div>
+            </div>
+
+            <div class="project-card card-hover reveal" style="animation-delay: 0.3s;">
+                <h4>Azure Cloud Infrastructure & CI/CD Deployment</h4>
+                <span class="tech-stack">Azure Portal, VMs, VNet/NSG, Azure DevOps, Azure Monitor</span>
+                <p class="project-desc">Provisioned Azure VMs, configured Storage Accounts, created Resource Groups, and set up Azure Networking (VNet, NSG, Subnets). Configured CI/CD Build and Release pipelines via Azure DevOps Services and implemented basic monitoring using Azure Monitor to track VM health and resource utilization.</p>
+                <div class="project-actions">
+                    <a href="#" class="btn-sm primary">View Live Demo / Architecture <i class="fas fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://github.com/shaikafzalbasha2030" target="_blank" class="btn-sm secondary"><i class="fab fa-github"></i> GitHub Code</a>
+                </div>
+            </div>
+
+            <div class="project-card card-hover reveal" style="animation-delay: 0.4s;">
+                <h4>Django Online Course Platform</h4>
+                <span class="tech-stack">Python, Django, SQLite, HTML/CSS, Bootstrap</span>
+                <p class="project-desc">A Django-based web application serving as an online course platform. Features include user authentication, browsing/posting courses (with multimedia support), course registration, and user feedback. Implemented models for Courses, Registrations, Activity Logging, and Feedback, alongside a full admin interface.</p>
+                <div class="project-actions">
+                    <a href="https://shaikafzalbasha2030.github.io/sab/" target="_blank" class="btn-sm primary">View Live Demo / Architecture <i class="fas fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://github.com/shaikafzalbasha2030" target="_blank" class="btn-sm secondary"><i class="fab fa-github"></i> GitHub Code</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Mid-Page Contact CTA Banner -->
+    <div class="cta-wrapper">
+        <div class="cta-banner reveal">
+            <h3>Looking for an immediate joiner with hands-on platform & cloud experience?</h3>
+            <a href="mailto:shaikafzalbasha52@gmail.com" class="cta-btn">Contact Me <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Certifications & Education -->
+    <section id="certifications">
+        <div class="section-title reveal">
+            <h3>Certifications & Education</h3>
+        </div>
+
+        <!-- Subsection 1: Certifications -->
+        <div class="subhead reveal"><i class="fas fa-certificate"></i> Certifications</div>
+        <div class="cert-grid">
+            <a href="https://drive.google.com/file/d/1582KoHFlCPlYINQnSgWOxEkouAU7vU_6/view?usp=drive_link" target="_blank" class="cert-item card-hover reveal" style="animation-delay: 0.1s;">
+                <h5>ServiceNow CSA <i class="fas fa-arrow-up-right-from-square"></i></h5>
+                <span>Certified System Administrator</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1Fjiesth07bPYRsTR0ZStsO4OsgJV8Ozs/view?usp=sharing" target="_blank" class="cert-item card-hover reveal" style="animation-delay: 0.2s;">
+                <h5>ServiceNow CAD <i class="fas fa-arrow-up-right-from-square"></i></h5>
+                <span>Certified Application Developer</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1K5ylxIdqLExstgdHkmJ8_iNE0UZHZzQJ/view?usp=drive_link" target="_blank" class="cert-item card-hover reveal" style="animation-delay: 0.3s;">
+                <h5>Salesforce Agentforce Specialist <i class="fas fa-arrow-up-right-from-square"></i></h5>
+                <span>Salesforce Platform</span>
+            </a>
+            <a href="https://drive.google.com/file/d/152upV6VsAEWuRPp77340nkT7pxUJR5jC/view?usp=sharing" target="_blank" class="cert-item card-hover reveal" style="animation-delay: 0.4s;">
+                <h5>Cloud Computing <i class="fas fa-arrow-up-right-from-square"></i></h5>
+                <span>NPTEL, IIT</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1fSSzPHtLbeTxHz2es26wweHi7E4N4J3s/view?usp=drive_link" target="_blank" class="cert-item card-hover reveal" style="animation-delay: 0.5s;">
+                <h5>Business Intelligence & Analytics <i class="fas fa-arrow-up-right-from-square"></i></h5>
+                <span>NPTEL, IIT</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1RpYsoBavHh5zTWM9ghYiOhUafmngZMT5/view?usp=drive_link" target="_blank" class="cert-item card-hover reveal" style="animation-delay: 0.6s;">
+                <h5>Data Analytics with Python <i class="fas fa-arrow-up-right-from-square"></i></h5>
+                <span>NPTEL, IIT</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1GtmcTkZbr0omt7J2DSrNOPW2iaDDZ83S/view?usp=sharing" target="_blank" class="cert-item card-hover reveal" style="animation-delay: 0.1s;">
+                <h5>Introduction to Machine Learning <i class="fas fa-arrow-up-right-from-square"></i></h5>
+                <span>NPTEL, IIT</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1n3ffiJpjCdb5FWDahe5ic9rnwFfdhMQO/view?usp=sharing" target="_blank" class="cert-item card-hover reveal" style="animation-delay: 0.2s;">
+                <h5>Python for Data Science <i class="fas fa-arrow-up-right-from-square"></i></h5>
+                <span>NPTEL, IIT</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1AFi63Sa2nuG4vugBdTLNKRbvGLi4uVnZ/view?usp=sharing" target="_blank" class="cert-item card-hover reveal" style="animation-delay: 0.3s;">
+                <h5>MATLAB Essentials <i class="fas fa-arrow-up-right-from-square"></i></h5>
+                <span>e.dX</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1oh7lybbNsfQ55VGdI_c8Dc_gX-Oy55Qp/view" target="_blank" class="cert-item card-hover reveal" style="animation-delay: 0.4s;">
+                <h5>AICTE Virtual Internship <i class="fas fa-arrow-up-right-from-square"></i></h5>
+                <span>AICTE | ServiceNow University</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1MbMLWi5ojQC0ABfw_q4Mk5eG15_LuJr0/view" target="_blank" class="cert-item card-hover reveal" style="animation-delay: 0.5s;">
+                <h5>Web Development Internship <i class="fas fa-arrow-up-right-from-square"></i></h5>
+                <span>APSSDC | Industry Program</span>
+            </a>
+        </div>
+
+        <!-- Subsection 2: Active Learning & Exam Prep -->
+        <div class="subhead reveal"><i class="fas fa-laptop-code"></i> Active Learning & Exam Prep</div>
+        <div class="cert-grid">
+            <div class="cert-item progress-card card-hover reveal" style="animation-delay: 0.1s;">
+                <h5>Microsoft Azure Fundamentals (AZ-900)</h5>
+                <span>Microsoft Azure</span>
+                <div class="status-badge">Currently Preparing / Exam Pending</div>
+            </div>
+            <div class="cert-item progress-card card-hover reveal" style="animation-delay: 0.2s;">
+                <h5>Cisco Networking Essentials</h5>
+                <span>Cisco Networking Academy</span>
+                <div class="status-badge">In Progress (Routing, Switching & TCP/IP)</div>
+            </div>
+        </div>
+
+        <!-- Subsection 3: Formal Education -->
+        <div class="subhead reveal"><i class="fas fa-graduation-cap"></i> Formal Education</div>
+        <div class="card card-hover reveal" style="max-width: 100%; text-align: left; border-color: var(--accent-mint);">
+            <h4>B.Tech, Electronics and Communication Engineering</h4>
+            <span class="meta">2022 — 2026</span>
+            <p>KSRM College of Engineering, Kadapa</p>
+            <p>Aggregate: 74%</p>
+        </div>
+    </section>
+
+    <!-- Portfolio & Documents Links -->
+    <section id="documents">
+        <div class="section-title reveal">
+            <h3>Portfolio & Documents</h3>
+        </div>
+        <div class="links-list">
+            <a href="https://www.linkedin.com/in/shaik-afzal-5779b927b" target="_blank" class="link-item card-hover reveal"><i class="fab fa-linkedin" style="color: var(--accent-mint); font-size: 1.2em;"></i> LinkedIn Profile</a>
+            <a href="https://github.com/shaikafzalbasha2030" target="_blank" class="link-item card-hover reveal" style="animation-delay: 0.1s;"><i class="fab fa-github" style="color: var(--accent-mint); font-size: 1.2em;"></i> GitHub Profile</a>
+            <a href="https://leetcode.com/u/shaikafzal2030/" target="_blank" class="link-item card-hover reveal" style="animation-delay: 0.2s;"><i class="fas fa-code" style="color: var(--accent-mint); font-size: 1.2em;"></i> LeetCode Profile</a>
+            <a href="https://www.hackerrank.com/profile/shaikafzalbasha1" target="_blank" class="link-item card-hover reveal" style="animation-delay: 0.3s;"><i class="fab fa-hackerrank" style="color: var(--accent-mint); font-size: 1.2em;"></i> HackerRank Profile</a>
+            <a href="https://docs.google.com/document/d/12XK5Cd9-Jfaw4AdGVx4KLvwlHYGk1SsQ/edit?usp=drivesdk" target="_blank" class="link-item card-hover reveal" style="animation-delay: 0.4s;"><i class="fas fa-file-lines" style="color: var(--accent-mint); font-size: 1.2em;"></i> Machine Learning Notes</a>
+            <a href="https://docs.google.com/document/d/1xq2l4pdVrX0nfZDoG-naOmWUTcmfoU6u4n1aKc3NPxw/edit?usp=drivesdk" target="_blank" class="link-item card-hover reveal" style="animation-delay: 0.5s;"><i class="fas fa-file-lines" style="color: var(--accent-mint); font-size: 1.2em;"></i> DSA / LeetCode Notes</a>
+            <a href="https://drive.google.com/file/d/1Zc5UfAUh2ceVvzAhxsbxbVe0n1o1KpQX/view?usp=drivesdk" target="_blank" class="link-item card-hover reveal" style="animation-delay: 0.6s;"><i class="fas fa-file-pdf" style="color: var(--accent-mint); font-size: 1.2em;"></i> Web Dev Project Document</a>
+            <a href="https://drive.google.com/file/d/1oh7lybbNsfQ55VGdI_c8Dc_gX-Oy55Qp/view" target="_blank" class="link-item card-hover reveal" style="animation-delay: 0.7s;"><i class="fas fa-certificate" style="color: var(--accent-mint); font-size: 1.2em;"></i> AICTE Certificate</a>
+            <a href="https://drive.google.com/file/d/1MbMLWi5ojQC0ABfw_q4Mk5eG15_LuJr0/view" target="_blank" class="link-item card-hover reveal" style="animation-delay: 0.8s;"><i class="fas fa-certificate" style="color: var(--accent-mint); font-size: 1.2em;"></i> Web Development Certificate</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3 style="color: var(--text-white); margin-bottom: 15px;">Let's Connect!</h3>
+        <p>Open to Bangalore, Hyderabad, Chennai, or Remote across India | Immediate Joiner</p>
+        <p>Kadapa, Andhra Pradesh, India | <a href="tel:+916305803424" class="contact-link">+91-6305803424</a> | <a href="mailto:shaikafzalbasha52@gmail.com" class="contact-link">shaikafzalbasha52@gmail.com</a></p>
+        <br>
+        <p>&copy; 2026 Shaik Afzal. Designed & Built with HTML/CSS.</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
