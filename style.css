@@ -631,5 +631,6 @@
             .skill-card, .cloud-card { padding: 20px; }
             .project-card h4 { font-size: 1.25rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
             
-            .terminal-window { animation: none; } /* Disable floating on mobile for performance */
+            .terminal-window { animation: none; } /* Disable floating on mobile for performanc
+                    e */
         }
